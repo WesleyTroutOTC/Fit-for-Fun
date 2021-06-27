@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- 
+			Name: Wesley Trout
+			Date: June 2021
+			
+			File Name: info.html 
+		-->
+		
+		<meta charset="utf-8" />
+		<title>Info</title>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<img src="banner.jpg" alt="Fit for Fun" />
+		
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="classes.html">Classes</a></li>
+					<li><a href="info.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<article>
+			
+			<div class="container">
+		
+				<form id="signup" method="get" action="thankyou.html" >
+					
+					
+					<fieldset id="info">
+					<legend>Your Info</legend>
+						
+						<div class="formRow">
+							<label for="first">First Name*</label>
+							<input name="firstname" id="first" type="text" placeholder="First Name" required />
+						</div>
+							
+						<div class="formRow">
+							<label for="last">Last Name*</label>
+							<input name="lastname" id="last" type="text" placeholder="Last Name" required />
+						</div>
+						
+						<div class="formRow">
+							<label for="mail">E-mail</label>
+							<input name="Email" id="mail" type="email" placeholder="example@gmail.com" />
+						</div>
+					
+						<div class="formRow">
+							<label for="phone">Phone number</label>
+							<input name="Phone" id="phone" type="tel" placeholder="(###) ###-####"
+							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+						</div>
+					
+						<div class="formRow">
+							<label for="reachhow">Best way to reach you?</label>
+							<select name="reachyou" id="reachhow">
+								<option value="reachEmail">Email</option>
+								<option value="reachPhone">Phone</option>
+								<option value="reachOwl">Owl</option>
+								<option value="reachBottle">Message in Bottle</option>
+							</select>
+						</div>
+					</fieldset>
+					
+					
+					
+					<fieldset id="classes">
+					<legend>Classes</legend>		
+						
+						<div class="formRow">	
+							<fieldset class="class">					
+								<input name="crosst" id="class1" value="yes" type="checkbox" />
+								<label for="class1">Cross Training</label>
+						
+								<h2>
+								<label for="hAM">AM</label>
+								<input name="tCross" id="hAM" value="AM" type="radio" />
+								<label for="hPM">PM</label>
+								<input name="tCross" id="hPM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						<div class="formRow">
+							<fieldset class="class">	
+								<input name="sprint" id="class2" value="yes" type="checkbox" />
+								<label for="class2">Sprint</label>
+								
+								<h2>
+								<label for="gAM">AM</label>
+								<input name="tSprint" id="gAM" value="AM" type="radio" />
+								<label for="gPM">PM</label>
+								<input name="tSprint" id="gPM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						<div class="formRow">
+							<fieldset class="class">		
+								<input name="spin" id="class3" value="yes" type="checkbox" />
+								<label for="class3">Spin</label>
+							
+								<h2>
+								<label for="fAM">AM</label>
+								<input name="tSpin" id="fAM" value="AM" type="radio" />
+								<label for="fPM">PM</label>
+								<input name="tSpin" id="fPM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						<div class="formRow">
+							<fieldset class="class">	
+								<input name="pump" id="class4" value="yes" type="checkbox" />
+								<label for="class4">Body Pump</label>
+
+								<h2>
+								<label for="eAM">AM</label>
+								<input name="tPump" id="eAM" value="AM" type="radio" />
+								<label for="ePM">PM</label>
+								<input name="tPump" id="ePM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						<div class="formRow">
+							<fieldset class="class">	
+								<input name="combat" id="class5" value="yes" type="checkbox" />
+								<label for="class5">Body Combat</label>
+						
+								<h2>
+								<label for="dAM">AM</label>
+								<input name="tCombat" id="dAM" value="AM" type="radio" />
+								<label for="dPM">PM</label>
+								<input name="tCombat" id="dPM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						<div class="formRow">	
+							<fieldset class="class">
+								<input name="step" id="class6" value="yes" type="checkbox" />
+								<label for="class6">Step Interval</label>
+						
+								<h2>
+								<label for="cAM">AM</label>
+								<input name="tStep" id="cAM" value="AM" type="radio" />
+								<label for="cPM">PM</label>
+								<input name="tStep" id="cPM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						<div class="formRow">
+							<fieldset class="class">		
+								<input name="across" id="class7" value="yes" type="checkbox" />
+								<label for="class7">Advanced Cross Training</label>
+						
+								<h2>
+								<label for="bAM">AM</label>
+								<input name="tAcross" id="bAM" value="AM" type="radio" />
+								<label for="bPM">PM</label>
+								<input name="tAcross" id="bPM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						<div class="formRow">
+							<fieldset class="class">	
+								<input name="mix" id="class8" value="yes" type="checkbox" />
+								<label for="class8">Mixxed FIT</label>
+						
+								<h2>
+								<label for="aAM">AM</label>
+								<input name="tMix" id="aAM" value="AM" type="radio" />
+								<label for="aPM">PM</label>
+								<input name="tMix" id="aPM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						<div class="formRow">	
+							<fieldset class="class">
+								<input name="zumba" id="class9" value="yes" type="checkbox" />
+								<label for="class9">Zumba</label>
+							
+								<h2>
+								<label for="zAM">AM</label>
+								<input name="tZumba" id="zAM" value="AM" type="radio" />
+								<label for="zPM">PM</label>
+								<input name="tZumba" id="zPM" value="PM" type="radio" />
+								</h2>
+							</fieldset>
+						</div>
+						
+						
+					</fieldset>
+				
+						<input class="submit" type="submit" value="Submit" />
+				</form>
+			</div>
+		
+		</article>
+		
+		<footer>
+			Fit for Fun &#10033; 1305 Park Central Square &#10033; Springfield, MO &#10033; 65806 (417) 555-6200
+		</footer>
+	</body>
+
+</html>

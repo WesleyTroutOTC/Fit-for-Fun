@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<!-- 
+			Name: Wesley Trout
+			Date: June 2021
+			
+			File Name: thankyou.html 
+		-->
+		
+		<meta charset="utf-8" />
+		
+		  <script>
+			function printQuery() {
+			  var query = window.location.search.substring(1);
+			  var vars = query.split("&");
+
+			  for (var i = 0; i < vars.length; i++) {
+				var pair = vars[i].split("=");
+				  document.write(pair[0] + ": " + pair[1] + "<br />");
+			  }
+			}
+		  </script>
+		
+		<title>Thank You</title>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<img src="banner.jpg" alt="Fit for Fun" />
+		
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="classes.html">Classes</a></li>
+					<li><a href="info.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<article>
+		
+			<div class="container">
+				<h3 id="thank">Thank you. We have recieved your form.</h3>
+
+				<p>
+				<script>
+					printQuery();
+				</script>
+				</p>
+			</div>
+		
+		</article>
+		
+		<footer>
+			Fit for Fun &#10033; 1305 Park Central Square &#10033; Springfield, MO &#10033; 65806 (417) 555-6200
+		</footer>
+	</body>
+
+</html>
